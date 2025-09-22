@@ -5,7 +5,7 @@ export const Navbar = () => {
     <header className="sticky top-0 z-50 w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         <a href="#" className="text-2xl font-bold text-maroon-600 dark:text-maroon-500">
-          <Image src="/images/Logo BR Kecil.jpeg" alt="Logo" width={40} height={40} className="inline-block mr-2" />
+          <Image src="/images/Logo BR Kecil.jpeg" alt="Logo" width={40} height={40} className="inline-block mr-2" priority={true} />
         </a>
         <nav className="hidden md:flex space-x-6 items-center">
           <a href="#about" className="text-slate-600 dark:text-slate-300 hover:text-maroon-600 dark:hover:text-maroon-500 transition-colors">

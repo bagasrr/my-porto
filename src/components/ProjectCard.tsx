@@ -21,7 +21,6 @@ export const ProjectCard = ({ project }: { project: Project }) => {
         <div className="flex flex-wrap gap-2 mb-4">
           <p className="font-bold">Tech Stack:&nbsp;</p>
           {project.tags.map((tag) => (
-            // <Tag key={tag}>{tag}</Tag>
             <p key={tag}>{tag},</p>
           ))}
         </div>

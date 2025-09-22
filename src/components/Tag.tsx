@@ -1,0 +1,1 @@
+export const Tag = ({ children }: { children: React.ReactNode }) => <span className="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 text-sm font-medium mr-2 mb-2 px-2.5 py-1 rounded-full">{children}</span>;

@@ -1,0 +1,20 @@
+[
+  {
+    "code": "lms",
+    "title": "Chill Study LMS",
+    "description": "Platform Learning Management System (LMS) interaktif yang memungkinkan pengguna mengikuti kursus online. Dilengkapi fitur progress tracking, kuis, dan dashboard personal.",
+    "tags": ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "Mux", "PostgreSQL"],
+    "image": "/images/projects/lms/homepage.png",
+    "liveUrl": "https://lms.bagasrr.my.id",
+    "codeUrl": "https://github.com/bagasrr/chill-study.git"
+  },
+  {
+    "code": "partmonitoring",
+    "title": "Stok.in - Monitoring Suku Cadang",
+    "description": "Aplikasi web untuk monitoring stok suku cadang secara real-time. Memudahkan manajemen inventaris dengan fitur pencatatan barang masuk/keluar dan notifikasi stok minimum.",
+    "tags": ["React", "Node.js", "Express.js", "MySQL", "Tailwind CSS", "Chart.js"],
+    "image": "/images/projects/partMonitoring/dashboard.png",
+    "liveUrl": "https://partmonitoring.my.id",
+    "codeUrl": "https://github.com/bagasrr/partMonitoring.git"
+  }
+]

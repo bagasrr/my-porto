@@ -17,7 +17,7 @@ Website ini dibangun dari nol menggunakan teknologi modern dengan fokus pada des
 
 ### 📸 Screenshot
 
-![Screenshot Portofolio](./public/screenshot/homepage.png)
+![Homepage](public/images/screenshot/homepage.png)
 
 ---
 

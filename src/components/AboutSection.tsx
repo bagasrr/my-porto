@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { SectionTitle } from "./SectionTitle";
 import { Tag } from "lucide-react";
+import { ImageWithSkeleton } from "./ImageWithSkeleton";
 
 export const AboutSection = () => {
   return (
@@ -10,7 +11,8 @@ export const AboutSection = () => {
         <div className="grid md:grid-cols-5 gap-12 items-center">
           <div className="md:col-span-2">
             <div className="relative aspect-square rounded-lg overflow-hidden shadow-2xl">
-              <Image src="/images/profile.jpeg" alt="Foto Profil Bagas Ramadhan Rusnadi" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 33vw" />
+              {/* <Image src="/images/profile.jpeg" alt="Foto Profil Bagas Ramadhan Rusnadi" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 33vw" /> */}
+              <ImageWithSkeleton src="/images/profile.jpeg" alt="Foto Profil Bagas Ramadhan Rusnadi" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 33vw" />
             </div>
           </div>
           <div className="md:col-span-3">

@@ -1,28 +1,52 @@
-import Image from "next/image";
+"use client"; // Tandai sebagai Client Component
+
+import Link from "next/link";
+import { useActiveSection } from "../hooks/useActiveSection";
+
+// Helper function untuk menggabungkan class (opsional, tapi rapi)
+const cn = (...classes: string[]) => classes.filter(Boolean).join(" ");
 
 export const Navbar = () => {
+  // 1. Definisikan section yang ingin diamati
+  const sectionIds = ["hero", "about", "skills", "projects", "contact"];
+
+  // 2. Gunakan custom hook kita untuk mendapatkan section yang aktif
+  const activeSection = useActiveSection(sectionIds);
+
+  // 3. Definisikan link navigasi
+  const navLinks = [
+    { href: "#about", label: "Tentang Saya" },
+    { href: "#skills", label: "Skills" },
+    { href: "#projects", label: "Proyek" },
+    { href: "#contact", label: "Kontak" },
+  ];
+
   return (
     <header className="sticky top-0 z-50 w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-        <a href="#" className="text-2xl font-bold text-maroon-600 dark:text-maroon-500">
-          <Image src="/images/Logo BR Kecil.jpeg" alt="Logo" width={40} height={40} className="inline-block mr-2" priority={true} />
+      <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
+        <Link href="#hero" className="font-bold text-xl text-maroon-800 dark:text-maroon-300">
+          BR
+        </Link>
+        <div className="hidden md:flex items-center space-x-8">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={cn(
+                "transition-colors hover:text-maroon-700 dark:hover:text-maroon-400",
+                // 4. Terapkan class `active` jika link ini adalah section yang sedang aktif
+                activeSection === link.href.substring(1) ? "text-maroon-700 dark:text-maroon-400 font-semibold" : "text-slate-600 dark:text-slate-300"
+              )}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+        <a href="/cv-bagas.pdf" target="_blank" rel="noopener noreferrer" className="bg-maroon-700 text-white px-4 py-2 rounded-md hover:bg-maroon-800 transition-colors">
+          Download CV
         </a>
-        <nav className="hidden md:flex space-x-6 items-center">
-          <a href="#about" className="text-slate-600 dark:text-slate-300 hover:text-maroon-600 dark:hover:text-maroon-500 transition-colors">
-            Tentang Saya
-          </a>
-          <a href="#projects" className="text-slate-600 dark:text-slate-300 hover:text-maroon-600 dark:hover:text-maroon-500 transition-colors">
-            Proyek
-          </a>
-          <a href="#contact" className="text-slate-600 dark:text-slate-300 hover:text-maroon-600 dark:hover:text-maroon-500 transition-colors">
-            Kontak
-          </a>
-          <a href="/resume/CV_Software_Engineer.pdf" target="_blank" className="bg-maroon-600 text-white px-4 py-2 rounded-md hover:bg-maroon-700 transition-all duration-300">
-            Download CV
-          </a>
-        </nav>
-        {/* Tombol menu untuk mobile bisa ditambahkan di sini */}
-      </div>
+      </nav>
+      <div className="h-px bg-gradient-to-r from-transparent via-maroon-300 to-transparent dark:via-maroon-800"></div>
     </header>
   );
 };

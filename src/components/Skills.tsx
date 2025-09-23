@@ -17,7 +17,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className="w-full py-5">
+    <div className="w-full py-5" id="skills">
       <div className="w-[90%] mx-auto ">
         <div className="group w-full  inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_100px,_black_calc(100%-100px),transparent_100%)]">
           <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 animate-infinite-scroll group-hover:[animation-play-state:paused]">

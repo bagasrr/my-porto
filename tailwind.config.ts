@@ -6,6 +6,11 @@ const config: Config = {
   content: ["./src/pages/**/*.{js,ts,jsx,tsx,mdx}", "./src/components/**/*.{js,ts,jsx,tsx,mdx}", "./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
+      fontFamily: {
+        // Nama 'poppins' akan menjadi class `font-poppins`
+        // Variabel '--font-poppins' diambil dari layout.tsx
+        poppins: ["var(--font-poppins)", "sans-serif"],
+      },
       colors: {
         // Menambahkan palet warna maroon custom
         maroon: {
@@ -22,10 +27,7 @@ const config: Config = {
           "950": "#450a0a",
         },
       },
-      // Atur font jika kamu ingin menggunakan font custom seperti Inter atau Poppins
-      fontFamily: {
-        sans: ["var(--font-inter)", "sans-serif"],
-      },
+
       animation: {
         "infinite-scroll": "infinite-scroll 40s linear infinite",
       },

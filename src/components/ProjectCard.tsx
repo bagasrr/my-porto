@@ -13,7 +13,7 @@ type Project = {
 
 export const ProjectCard = ({ project }: { project: Project }) => {
   return (
-    <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col justify-between max-w-[45%]">
+    <div className="md:bg-white md:max-w-[45%] dark:bg-slate-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex  flex-col justify-between ">
       <Image src={project.image} alt={`Screenshot of ${project.title}`} width={600} height={400} className="w-full h-48 object-cover" />
       <div className="p-6">
         <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100 mb-2">{project.title}</h3>

@@ -3,7 +3,7 @@
     "code": "lms",
     "title": "Chill Study LMS",
     "description": "Platform Learning Management System (LMS) interaktif yang memungkinkan pengguna mengikuti kursus online. Dilengkapi fitur progress tracking, kuis, dan dashboard personal.",
-    "tags": ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "Mux", "PostgreSQL"],
+    "tags": ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
     "image": "/images/projects/lms/homepage.png",
     "liveUrl": "https://lms.bagasrr.my.id",
     "codeUrl": "https://github.com/bagasrr/chill-study.git"

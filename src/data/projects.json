@@ -13,7 +13,7 @@
     "title": "Stok.in - Monitoring Suku Cadang",
     "description": "Aplikasi web untuk monitoring stok suku cadang secara real-time. Memudahkan manajemen inventaris dengan fitur pencatatan barang masuk/keluar dan notifikasi stok minimum.",
     "tags": ["React", "Node.js", "Express.js", "MySQL", "Tailwind CSS", "Chart.js"],
-    "image": "/images/projects/partMonitoring/dashboard.png",
+    "image": "/images/projects/partmonitoring/dashboard.png",
     "liveUrl": "https://partmonitoring.my.id",
     "codeUrl": "https://github.com/bagasrr/partMonitoring.git"
   }

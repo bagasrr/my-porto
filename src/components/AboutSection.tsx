@@ -13,6 +13,7 @@ export const AboutSection = () => {
             <div className="relative aspect-square rounded-lg overflow-hidden shadow-2xl">
               <ImageWithSkeleton src="/images/profile.jpeg" alt="Foto Profil Bagas Ramadhan Rusnadi" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 33vw" />
             </div>
+            <p>Gambar di lokal ada</p>
           </div>
           <div className="md:col-span-3">
             <p className="text-slate-600 dark:text-slate-300 text-lg mb-6 leading-relaxed">

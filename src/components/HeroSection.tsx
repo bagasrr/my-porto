@@ -1,4 +1,5 @@
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown } from "lucide-react";
+import Contact from "./Contact";
 
 export const HeroSection = () => {
   return (
@@ -8,17 +9,7 @@ export const HeroSection = () => {
           Halo, saya <span className="text-maroon-600 dark:text-maroon-500">Bagas Ramadhan Rusnadi</span>
         </h1>
         <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 mb-8 max-w-3xl mx-auto">Seorang Full-Stack Developer yang bersemangat membangun aplikasi web yang modern dan fungsional.</p>
-        <div className="flex justify-center space-x-4 mb-8">
-          <a href="#" target="_blank" className="text-slate-600 dark:text-slate-300 hover:text-maroon-600 dark:hover:text-maroon-500 transition-colors">
-            <Github size={28} />
-          </a>
-          <a href="#" target="_blank" className="text-slate-600 dark:text-slate-300 hover:text-maroon-600 dark:hover:text-maroon-500 transition-colors">
-            <Linkedin size={28} />
-          </a>
-          <a href="mailto:emailkamu@example.com" className="text-slate-600 dark:text-slate-300 hover:text-maroon-600 dark:hover:text-maroon-500 transition-colors">
-            <Mail size={28} />
-          </a>
-        </div>
+        <Contact />
         <a href="#projects" className="inline-flex items-center justify-center bg-maroon-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-maroon-700 transition-all duration-300 shadow-lg">
           Lihat Proyek Saya <ArrowDown className="ml-2 h-5 w-5" />
         </a>
